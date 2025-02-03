@@ -19,3 +19,18 @@
 
 
 
+//-------strings----//
+
+
+fn main(){
+    let greetings: String = String::from("Hola");
+    println!("{}", greetings);                      //basic string
+
+
+
+    print!("{}", greetings.chars().nth(1000))        //actual fun part  this is not possble is rust...try pattern matching(some if char or none if overflow) later
+
+
+
+
+}

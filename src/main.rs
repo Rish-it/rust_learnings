@@ -62,4 +62,4 @@
 //     let first_word = get_first_word(sentence);
 //     println!("first word is: {}", first_word);
 // }
-// // so in a nutshell you need to define the return type of the function. 
+// // so in a nutshell you need to define the return type of the function.Coz return type can't be inferred in rust. 

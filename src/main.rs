@@ -62,4 +62,31 @@
 //     let first_word = get_first_word(sentence);
 //     println!("first word is: {}", first_word);
 // }
-// // so in a nutshell you need to define the return type of the function.Coz return type can't be inferred in rust. 
+ fn main(){
+    stack_fn();
+    heap_fn();
+    update_str_fn();
+ }
+
+ fn stack_fn(){
+    let x=1;
+    let y=68;
+    let z=x+y;
+    println!("stack function:the sum of {} and {} is {}",x,y,z);
+ }
+
+ fn heap_fn(){
+    let f1=String::from ("hello");
+    let f2=String::from ("rust");
+    let f=format!("{} {}", f1, f2);
+    println!("Heap function: Combined string is '{}'", f);
+ }
+
+
+ fn update_str_fn(){
+    let mut f = String:: from ("initial");
+    println!("Before update: {}", f);
+
+    f.push_str(" and some additional text");
+    println!("After update: {}", f);
+ }

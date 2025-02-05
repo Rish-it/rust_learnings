@@ -85,8 +85,14 @@
 
  fn update_str_fn(){
     let mut f = String:: from ("initial");
-    println!("Before update: {}", f);
+    println!("capacity:{}, Length:{}, pointer:{:p}", f.capacity(), f.len(), f.as_ptr());
 
+for _ in 0..100{
     f.push_str(" and some additional text");
-    println!("After update: {}", f);
+    println!("capacity:{}, Length:{}, pointer:{:p}", f.capacity(), f.len(), f.as_ptr());
+
+   
+
+}
+   
  }

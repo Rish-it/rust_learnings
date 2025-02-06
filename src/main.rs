@@ -110,13 +110,14 @@
 
 
 fn main(){
-  let my_string=String::from("hey");
-  // takes_ownership(my_string.clone());   --->you can use clone to fix below error but its kind a expenisve operation and its not feasible everytime.
-  takes_ownership(my_string);    //takes ownership
-  // println!("{}", my_string);              <--ERROR: my_string is moved 
+  let mut my_string=String::from("hey");
+  // takes_ownership(my_string.clone());                //you can use clone to fix below error but its kind a expenisve operation and its not feasible everytime.
+  my_string=takes_ownership(my_string);    //takes ownership
+  println!("{}", my_string);                           //<--ERROR: my_string is moved 
 }
 
-fn takes_ownership(some_stirng:String){
+fn takes_ownership(some_stirng:String) -> String{
   println!("{}", some_stirng);
+  return some_stirng;                 //----> And she is back..
 
 }

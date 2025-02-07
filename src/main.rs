@@ -324,4 +324,49 @@
 
 
 
-//---------->This is half of Basic Rust------------<//
+//---------->This is half of Basic Rust------------</
+
+
+//cargo libs and some other misc jargons..
+
+
+// use rand::{rng, Rng};
+
+// fn main() {
+//     let mut rng=rng();
+//     let n: u32 = rng.random();
+//     println!("Random number: {}", n);
+// }  generate random numbers with updated syntax as per 2k24. thread_gen() is deprecated 
+
+
+
+
+
+// Date & Time stuff.... Chronon is the way.
+// use chrono::{Local, Utc};
+
+// fn main() {
+//     // Get the current date and time in UTC
+//     let now = Utc::now();
+//     println!("Current date and time in UTC: {}", now);
+
+//     // Format the date and time
+//     let formatted = now.format("%Y-%m-%d %H:%M:%S");
+//     println!("Formatted date and time: {}", formatted);
+
+//     // Get local time
+//     let local = Local::now();
+//     println!("Current date and time in local: {}", local);
+// }
+
+
+
+
+
+// What all libraries does rust have?
+// A lot of them
+// 1. https://actix.rs/ - Extremely fast http server.
+// 2. https://serde.rs/ - Serializing and deserialising data in rust.
+// 3. https://tokio.rs/ - Asynchronous runtime in rust.
+// 4. https://docs.rs/reqwest/latest/reqwest/ - Send HTTP requests.
+// 5. https://docs.rs/sqlx/latest/sqlx/ - Cornect to sql database.

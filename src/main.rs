@@ -262,8 +262,9 @@
 use std::fs;
 
 fn main() {
-    // Read the file content
-    let res = fs::read_to_string("examples.txt");
+    // Read the file content using the custom function
+    let res = read_from_file_unsafe("examples.txt".to_string());
+    print!("hey");
 
     // Match the result
     match res {
@@ -276,7 +277,14 @@ fn main() {
     }
 }
 
-fn read_from_file_unsafe(file_content:String) -> String {
-    let res= fs:: read_to_string ("example.txt");
-    return res.unwrap ();
-    }    // this is to test whe i'm ok with thread crashing... God knows why 
+fn read_from_file_unsafe(file_name: String) -> Result<String, String> {
+    // Attempt to read the file content
+    let res = fs::read_to_string(&file_name); // Use the passed file name
+
+    // Handle the result
+    if let Ok(content) = res {
+        Ok(content) // Return the content if successful
+    } else {
+        Err("error loading file".to_string()) // Return a custom error message if failed
+    }
+}

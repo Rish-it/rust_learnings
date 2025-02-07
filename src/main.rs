@@ -179,19 +179,39 @@
 
 ///------> let's have enum's just like typescript.
 //when you have various variants of something...
-enum Direction{
-  North,
-  South, 
-  East, 
-  West,
+// enum Direction{
+//   North,
+//   South, 
+//   East, 
+//   West,
+// }
+// fn main(){
+//   let my_direction=Direction::South;
+//   let new_direction = my_direction;
+//   move_around(new_direction);
+
+// }
+
+// fn move_around(direction:Direction){
+
+// }
+
+/// one more examples of ENUM
+/// 
+enum DC{
+  Merc,
+  Beamer,
+  Autobio,
+  A8,
 }
+
 fn main(){
-  let my_direction=Direction::South;
-  let new_direction = my_direction;
-  move_around(new_direction);
-
+  let my_dc=DC::Merc;
+  let fav_dc=my_dc;
+  test_opt(fav_dc);
+  // println!("{}", fav_dc) for printing this you need add #[derive(Debug)] // Add Debug to print the enum than use the borrow ownership stuff..
 }
 
-fn move_around(direction:Direction){
-
+fn test_opt(dc:DC){
+  //whatever
 }

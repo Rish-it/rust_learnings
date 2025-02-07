@@ -370,3 +370,16 @@
 // 3. https://tokio.rs/ - Asynchronous runtime in rust.
 // 4. https://docs.rs/reqwest/latest/reqwest/ - Send HTTP requests.
 // 5. https://docs.rs/sqlx/latest/sqlx/ - Cornect to sql database.
+
+
+
+
+// Leftovers - Traits, Generics and Lifetimes, Multithreading, macros, async ops (Futures)
+// https://doc.rust-lang.org/book/ch10-00-generics.html.
+// https://doc.rust-lang.org/book/ch19-00-advanced-features.html.
+// https://doc.rust-lang.org/book/ch20-00-final-project-a-web-server.html.
+// https://doc.rust-lang.org/std/future/trait.Future.html.
+
+
+// what can you build with this 
+//Right Now: CLI's, Backend for your fullstack application.(with some async knowledge). 

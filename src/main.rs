@@ -529,11 +529,37 @@
 // }
 
 
-//----> initializing the vector using rust macros.
+// //----> initializing the vector using rust macros.
+
+// fn main(){
+//     let numbers=vec![1,2,3,4,5];
+//     for number in numbers{
+//         print!("{}", number)
+//     }
+// }
+
+
+
+
+//-------->Hashmaps(Store key value pairs rs:23Y)-------<
+//Inser, Get, Remove, Clear.
+
+use std::collections::HashMap;
 
 fn main(){
-    let numbers=vec![1,2,3,4,5];
-    for number in numbers{
-        print!("{}", number)
-    }
+    let mut users=HashMap::new();
+    users.insert(String::from("Rs"), 23);
+    users.insert(String::from("Js"), 23);
+    
+
+let first_user_age = users.get("Rs");
+match first_user_age {
+    Some(age)=>println!("age is {}", age),
+    None=>println!("user not found"),
+    
 }
+
+}
+
+
+

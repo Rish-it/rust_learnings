@@ -480,3 +480,31 @@
 //        println!("{}", a1);    
 //        println!("{}", a2);   
 // }-----> No hanky-panky is still better example....
+
+
+
+//-------------------------------------------let's Step-up------------------------------------------------------------------------------
+
+
+
+
+
+//---->Collections (dynamic stuff storage on Heap offcourse )..
+
+
+//----1) vectors-- Dynamic array
+
+fn main(){
+    let mut vec = Vec::new();
+        vec.push(1);
+        vec.push(12);
+        vec.push(13);
+        vec.push(3);
+        println!("{:?}", vec);     //implementing debug trait
+        // vec.pop(12);
+        // println!("{:?}", vec);
+
+    }
+
+
+

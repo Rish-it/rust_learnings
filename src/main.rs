@@ -474,9 +474,9 @@
 //     println!("{}", a2);      
 // }
 
-fn main(){
-       let a1=String::from ("hey");
-       let a2=&a1;    // if you stll want to rent your Rehana you do reference a1, a2 is ref the same string. 
-       println!("{}", a1);    
-       println!("{}", a2);   
-}
+// fn main(){
+//        let a1=String::from ("hey");
+//        let a2=&a1;    // if you stll want to rent your Rehana you do reference a1, a2 is ref the same string. 
+//        println!("{}", a1);    
+//        println!("{}", a2);   
+// }-----> No hanky-panky is still better example....

@@ -906,7 +906,7 @@
 //         {
 //             let str2=String::from("Rust");
         
-//             ans=longest(&str1, &str2);   ------> more beautiful error str2 doesn't live long enough....
+//             ans=longest(&str1, &str2);   ------> more beautiful error str2 doesn't live long enough.... 
     
 //         }
 //         print!("{}", ans);        // str2 value will be cleared hence ans cleared.... even if str2 is smaller then also error stays
@@ -922,3 +922,23 @@
 //         }
 //     }
        
+//---------->struct  with  Lifetime  (ref in side struct)------------->
+
+
+
+
+// struct User{
+//     name: &str,      // same lifetime issue 
+// }
+
+struct User<'a>{    
+    name: &'a str,     // relationship done 'a
+}
+    
+
+fn main(){
+    let name = String::from("Hey");
+    let user =User {name: &name };
+
+    println!("{}", user.name);
+}

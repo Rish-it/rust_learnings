@@ -1046,7 +1046,7 @@ use std::{
             producer.send(sum).unwrap();
         });
     }
-    drop(tx);
+    drop(tx);    //---->  This is the solution to hung since it was  for loop kept waiting...#explicitly drop it  
     let mut final_sum :u64=0;
         for val in rx{
             final_sum = final_sum+val;
